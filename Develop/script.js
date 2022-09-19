@@ -18,7 +18,40 @@ function passOptions() {
 }
 
 function charOptions() {
-  var characterOp = prompt("Please choose characters to use: lowercase,buppercase, numeric, special characters");
+  var characterOp = confirm("Please choose characters to use: lowercase, uppercase, numeric, special characters. [Minimum 2]");
+  if (characterOp = true){
+    confirm("Use Lowercase characters?");
+    characterOp = ("qwertyuiopasdfghjklzxcvbnm");
+    if (characterOp = ("qwertyuiopasdfghjklzxcvbnm"));
+    confirm("Use Uppercase characters?");
+    if (characterOp = true){
+      characterOp = ("qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM");
+      if (characterOp = ("qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"));
+      confirm("Use numeric characters?");
+
+      if ( characterOp = false){
+        characterOp = ("qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM")
+      }
+
+      else if (characterOp = true){
+        characterOp = ("qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890");
+        confirm("Use special characters?");
+      }
+
+      if (characterOp = false){
+      characterOp = ("qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM123456789")
+      }
+      
+      else if( characterOp = true){
+        characterOp = ("qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890!@#$&*")
+      }
+
+    }
+
+  }
+console.log(characterOp);
+return characterOp;
+}
  /*
   if (characterOp === "LUNS") {
     window.alert("You have selcted lowercase, uppercase, numeric, and special characters");
@@ -70,7 +103,3 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
-
-
-
