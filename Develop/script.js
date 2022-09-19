@@ -1,13 +1,59 @@
 // Assignment code here
-function generatePassword() {
-var passCharacter = "123456789QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm!@#$%^&*()";
-var passLength = 16;
-var password = "";
-for (var i = 0; i <= passLength; ++i){
-  var randomNumber = Math.floor(Math.random() * passCharacter.length);
-  password += passCharacter.substring(randomNumber, randomNumber + 1);
+
+// Options 
+function passOptions() {
+  var lengthOption = prompt("Please enter desired password length: 8-128 Characters");
+  if (lengthOption < 8) {
+    window.alert("User cancelled entry");
+    lengthOption = ("null");
+  }
+  else if (lengthOption > 128) {
+    window.alert("User cancelled entry");
+    lengthOption = ("null");
+  }
+  else {
+  }
+  console.log(lengthOption);
+  return lengthOption;
 }
-return password;
+
+function charOptions() {
+  var characterOp = prompt("Please choose characters to use: lowercase,buppercase, numeric, special characters");
+ /*
+  if (characterOp === "LUNS") {
+    window.alert("You have selcted lowercase, uppercase, numeric, and special characters");
+    characterOp = ("qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM123456789!@#$%^&*");
+  }
+  else if (characterOp === "LUN") {
+    window.alert("You have selcted lowercase, uppercase, and numeric characters");
+    characterOp = ("qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890");
+  }
+  else if (characterOp === "UNS") {
+    window.alert("You have selected uppercase, numeric, and special characters");
+    characterOp = ("QWERTYUIOPASDFGHJKLZXCVBNM1234567890!@#$%^&*()");
+  }
+  else if (characterOp === "LNS") {
+    window.alert("You have slected lowercase, numeric, and special characters");
+    characterOp = ("qwertyuiopasdfghjklzxcvbnm1234567890!@#$%^&*()");
+  }
+  else if (characterOp != "LUNS") {
+    window.alert("Please select valid character!");
+    characterOp = ("undefined");
+  }
+  console.log(characterOp);
+  return characterOp;
+}
+*/
+// Password generator function 
+function generatePassword() {
+  var passLength = passOptions();
+  var passCharacter = charOptions();
+  var password = "";
+  for (var i = 0; i <= passLength; ++i) {
+    var randomNumber = Math.floor(Math.random() * passCharacter.length);
+    password += passCharacter.substring(randomNumber, randomNumber + 1);
+  }
+  return password;
 }
 
 // Get references to the #generate element
