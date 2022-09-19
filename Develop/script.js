@@ -1,7 +1,15 @@
 // Assignment code here
 function generatePassword() {
-
+var passCharacter = "123456789QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm!@#$%^&*()";
+var passLength = 16;
+var password = "";
+for (var i = 0; i <= passLength; ++i){
+  var randomNumber = Math.floor(Math.random() * passCharacter.length);
+  password += passCharacter.substring(randomNumber, randomNumber + 1);
 }
+return password;
+}
+
 // Get references to the #generate element
 var generateBtn = document.getElementById("generate");
 
