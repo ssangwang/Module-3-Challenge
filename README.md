@@ -10,7 +10,7 @@ N/A
 
 ## Usage
 
-Visit this link to view website: https://ssangwang.github.io/Module-3/
+Visit this link to view website: https://ssangwang.github.io/Module-3-Challenge/
 
 Click on the "Generate Password" button and follow the prompts to create a password! 
 
