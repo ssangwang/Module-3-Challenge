@@ -25,31 +25,24 @@ function charOptions() {
   var allChar = ("")
 
   if (confirm("Please choose characters to use: lowercase, uppercase, numeric, special characters.")) {
-    if (confirm("Use lowercase letters?")) {
-      allChar1 = allChar.concat(lowercaseChar);
-      if (confirm("Use uppercase?")) {
-        allChar1 = allChar.concat(uppercaseChar, lowercaseChar);
-        if (confirm("use numeric?")) {
-          allChar1 = allChar.concat(numericChar, uppercaseChar, lowercaseChar);
-          if (confirm("use special?")) {
-            allChar1 = allChar.concat(specialChar, numericChar, uppercaseChar, lowercaseChar);
-          } else {
-            allChar1 = allChar.concat(numericChar, lowercaseChar, uppercaseChar);
-          }
-        } else {
-          allChar1 = allChar.concat(lowercaseChar, uppercaseChar);
-        }
-      } else {
-        allChar1 = allChar.concat(lowercaseChar);
-      }
-    } else {
-      allChar1 = ""
+    if (confirm("use lowercase?")) {
+     allChar += allChar.concat(lowercaseChar)
     }
-  } else {
-    window.alert("please say something")
+
+    if (confirm("use uppercase?")) {
+      allChar += allChar.concat(uppercaseChar)
+    }
+
+    if (confirm("use numeric?")) {
+      allChar += allChar.concat(numericChar)
+    }
+
+    if (confirm("use special?")) {
+      allChar += allChar.concat(specialChar)
+    }
+    console.log(allChar)
+    return allChar
   }
-  console.log(allChar1)
-  return allChar1
 }
 
 // Password generator function 
