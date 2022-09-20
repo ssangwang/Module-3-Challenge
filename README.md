@@ -14,7 +14,10 @@ Visit this link to view website: https://ssangwang.github.io/Module-3/
 
 Click on the "Generate Password" button and follow the prompts to create a password! 
 
-![Getting Started](readme-screenshot-2.PNG)
+![Getting Started](prompt1.PNG)
+![Getting Started](prompt2.PNG)
+![Getting Started](prompt3.PNG)
+![Getting Started](finished.PNG)
 
 ## Credits 
 Nathan Darter - TA 
