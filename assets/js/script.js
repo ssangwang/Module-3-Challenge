@@ -25,19 +25,19 @@ function charOptions() {
   var allChar = ("")
 
   if (confirm("Please choose characters to use: lowercase, uppercase, numeric, special characters.")) {
-    if (confirm("use lowercase?")) {
+    if (confirm("Use Lowercase letters?")) {
      allChar += allChar.concat(lowercaseChar)
     }
 
-    if (confirm("use uppercase?")) {
+    if (confirm("Use Uppercase letters?")) {
       allChar += allChar.concat(uppercaseChar)
     }
 
-    if (confirm("use numeric?")) {
+    if (confirm("Use Numbers?")) {
       allChar += allChar.concat(numericChar)
     }
 
-    if (confirm("use special?")) {
+    if (confirm("Use Special characters?")) {
       allChar += allChar.concat(specialChar)
     }
     console.log(allChar)
